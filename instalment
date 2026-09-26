@@ -1,0 +1,89 @@
+# Python Installation Guide
+
+## Installation Steps
+
+### Windows
+
+1. Go to https://www.python.org/downloads/ and click **Download Python** (this grabs the latest stable release).
+2. Run the downloaded `.exe` installer.
+3. **Important:** On the first screen, check the box **"Add python.exe to PATH"** before clicking Install.
+4. Choose **Install Now** for the default setup, or **Customize installation** to change the install location or select optional features (pip, documentation, etc.).
+5. Wait for the installer to finish, then click **Close**.
+
+### macOS
+
+1. Go to https://www.python.org/downloads/ and download the macOS installer (`.pkg`).
+2. Open the downloaded file and follow the installer prompts (Continue → Agree → Install).
+3. Enter your administrator password when prompted.
+4. Alternatively, if you use Homebrew, run:
+   ```
+   brew install python3
+   ```
+
+### Linux (Debian/Ubuntu-based)
+
+1. Open a terminal.
+2. Update the package index:
+   ```
+   sudo apt update
+   ```
+3. Install Python 3 and pip:
+   ```
+   sudo apt install python3 python3-pip -y
+   ```
+
+### Linux (Fedora/RHEL-based)
+
+```
+sudo dnf install python3 python3-pip -y
+```
+
+## Verification Steps
+
+After installation, confirm Python was installed correctly.
+
+1. Open a terminal (macOS/Linux) or Command Prompt / PowerShell (Windows).
+2. Check the installed version:
+   ```
+   python3 --version
+   ```
+   On Windows, you may instead need:
+   ```
+   python --version
+   ```
+3. You should see output similar to:
+   ```
+   Python 3.12.4
+   ```
+4. Verify that `pip` (the package installer) is available:
+   ```
+   pip3 --version
+   ```
+5. Optionally, launch the interactive interpreter to confirm everything works:
+   ```
+   python3
+   >>> print("Python installed successfully")
+   ```
+   Type `exit()` to leave the interpreter.
+
+A screenshot of a successful version check can be placed in the `Images/` folder (e.g. `Images/verify_install.png`) for reference.
+
+## Troubleshooting
+
+| Issue | Likely Cause | Solution |
+|---|---|---|
+| `'python' is not recognized as an internal or external command` (Windows) | Python wasn't added to PATH during install | Re-run the installer, choose **Modify**, and check "Add python.exe to PATH", or manually add the Python install folder to the PATH environment variable |
+| `command not found: python3` (macOS/Linux) | Python isn't installed, or terminal needs to be restarted | Reopen the terminal, or reinstall using the steps above |
+| `pip` not recognized | pip wasn't installed alongside Python, or PATH issue | Run `python3 -m ensurepip --upgrade`, or reinstall with pip option selected |
+| Multiple Python versions conflict (`python` points to Python 2) | Older Python 2 installation still present | Always use `python3` and `pip3` explicitly, or update aliases/symlinks |
+| Permission denied during install (Linux/macOS) | Insufficient privileges | Prefix the command with `sudo`, or install in a user-level virtual environment |
+| Installer hangs or fails to download | Network/firewall restrictions | Check internet connection, try a different network, or download via browser directly from python.org |
+| SSL certificate errors when using pip | Outdated certificates or corporate proxy | Upgrade pip (`python3 -m pip install --upgrade pip`) or configure the proxy/certificate settings |
+
+If a problem persists, check the official documentation at https://docs.python.org/3/using/index.html or search the exact error message.
+
+## Conclusion
+
+Installing Python is a straightforward process once the correct installer for your operating system is used and the PATH is configured properly. By following the steps above — installing, verifying the version with `python3 --version`, and troubleshooting common PATH or permission issues — you now have a working Python environment ready for development, scripting, or learning. From here, you can install an IDE (such as VS Code or PyCharm), set up a virtual environment, and start writing your first Python programs.
+
+See `FAQ.md` for answers to common questions.

@@ -1,0 +1,36 @@
+# Mini AI Documentation Project — Python Installation Guide
+
+## Aim
+Use AI to prepare professional documentation.
+
+## Problem Statement
+Prepare documentation for installing Python.
+
+## Project Structure
+```
+Module1_Project/
+│
+├── Introduction.md     # Introduction + Software Requirements
+├── Installation.md     # Installation Steps, Verification Steps, Troubleshooting, Conclusion
+├── FAQ.md              # Frequently Asked Questions
+├── Images/             # Screenshots referenced in the documentation (add your own)
+└── README.md           # This file — project overview
+```
+
+## How to Use This Documentation
+1. Start with `Introduction.md` to understand what Python is and confirm your system meets the software requirements.
+2. Follow `Installation.md` for step-by-step installation instructions (Windows, macOS, Linux), how to verify the install, and how to troubleshoot common issues.
+3. Check `FAQ.md` for quick answers to common questions.
+4. Place any installation screenshots inside the `Images/` folder and reference them from the Markdown files (e.g. `![Verify Install](Images/verify_install.png)`).
+
+## Tasks Covered
+- [x] Introduction
+- [x] Software Requirements
+- [x] Installation Steps
+- [x] Verification Steps
+- [x] Troubleshooting
+- [x] Frequently Asked Questions
+- [x] Conclusion
+
+## Notes
+This documentation was generated with AI assistance as part of a mini project to practice using AI tools for creating clear, professional, end-user documentation.

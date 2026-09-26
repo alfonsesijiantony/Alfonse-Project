@@ -1,0 +1,26 @@
+# Introduction to Python Installation
+
+## Introduction
+
+Python is a widely used, high-level programming language known for its readability, versatility, and large ecosystem of libraries. It is used across web development, data science, automation, artificial intelligence, and scientific computing. This documentation walks a new user through installing Python on a computer, verifying that the installation was successful, and resolving common problems that come up along the way.
+
+This guide is written for beginners who are installing Python for the first time, but it can also serve as a quick reference for anyone setting up a new machine.
+
+## Software Requirements
+
+Before installing Python, confirm that your system meets the following requirements:
+
+| Requirement | Details |
+|---|---|
+| Operating System | Windows 10/11, macOS 11+, or a modern Linux distribution (Ubuntu 20.04+, Fedora, etc.) |
+| Disk Space | At least 100 MB free (more if installing additional packages) |
+| RAM | 2 GB minimum (4 GB or more recommended) |
+| Internet Connection | Required to download the installer and packages |
+| Administrator/Root Access | Recommended, so environment variables (PATH) can be updated during install |
+
+### Choosing a Python Version
+
+- Use **Python 3.x** — Python 2 reached end of life in January 2020 and should not be used for new projects.
+- Download the latest stable release from the official source: https://www.python.org/downloads/
+
+Continue to `Installation.md` for step-by-step installation instructions.

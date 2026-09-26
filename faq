@@ -1,0 +1,34 @@
+# Frequently Asked Questions
+
+**Q1. Which version of Python should I install?**
+A. Always install the latest stable **Python 3.x** release from python.org. Python 2 is no longer maintained or supported.
+
+**Q2. Do I need to install pip separately?**
+A. No. Since Python 3.4, `pip` is bundled with the official installer by default. If it's missing, run `python3 -m ensurepip --upgrade`.
+
+**Q3. What is the difference between `python` and `python3` commands?**
+A. On some systems (mainly Linux and macOS), `python` may point to an old Python 2 installation or may not exist at all. Using `python3` explicitly avoids ambiguity.
+
+**Q4. How do I check if Python is already installed?**
+A. Open a terminal and run `python3 --version` (or `python --version` on Windows). If a version number appears, Python is installed.
+
+**Q5. Can I have multiple versions of Python installed at once?**
+A. Yes. Tools like `pyenv` (macOS/Linux) or the **Python Launcher** (`py`, Windows) let you manage and switch between multiple versions.
+
+**Q6. Why should I check "Add Python to PATH" during installation on Windows?**
+A. This allows you to run `python` and `pip` commands from any terminal window without specifying the full installation path.
+
+**Q7. What is a virtual environment, and do I need one?**
+A. A virtual environment is an isolated Python setup for a specific project, keeping its dependencies separate from other projects. It's recommended but not required for basic installation. Create one with:
+```
+python3 -m venv myenv
+```
+
+**Q8. Is an internet connection required after installation?**
+A. Only if you plan to install additional packages using `pip install <package>`. Core Python itself runs offline.
+
+**Q9. How do I uninstall Python?**
+A. On Windows, use "Add or Remove Programs." On macOS, delete the Python framework from `/Library/Frameworks/Python.framework` (if installed via the official installer) or `brew uninstall python3`. On Linux, use your package manager, e.g. `sudo apt remove python3`.
+
+**Q10. Where can I get more help?**
+A. Refer to the official Python documentation at https://docs.python.org/3/, or the community help pages at https://www.python.org/community/.
